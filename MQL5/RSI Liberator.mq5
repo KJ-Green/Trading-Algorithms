@@ -1,10 +1,10 @@
 //+------------------------------------------------------------------+
 //|                                                RSI Liberator.mq5 |
-//|                                  Copyright 2023, MetaQuotes Ltd. |
-//|                                             https://www.mql5.com |
+//|                              Copyright 2023, Shogun Trading Ltd. |
+//|                                     info.shoguntrading@gmail.com |
 //+------------------------------------------------------------------+
-#property copyright "Copyright 2023, MetaQuotes Ltd."
-#property link      "https://www.mql5.com"
+#property copyright "Copyright 2023, Shogun Trading Ltd."
+#property link      "info.shoguntrading@gmail.com"
 #property version   "1.00"
 
 

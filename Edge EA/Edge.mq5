@@ -1019,7 +1019,6 @@ void OnTick(){
 //________________________________________________________________________________________________________________________________________________________________ LIVE/BACKTEST NEWS END _____________/   
 
 
-////                                 ////////////////////////////////////////////////////
 ////  SAME PAIR / DIRECTION FILTER  ////////////////////////////////////////////////////
    if(!IsTester){
       if(InpSamePairDirection==true){
@@ -1062,7 +1061,6 @@ void OnTick(){
    }
 
 
-////                       /////////////////////////////////////////////////////////////////
 ////  HEDGING NOT ALLOWED  ////////////////////////////////////////////////////////////////
    if(InpHedging == false && InpNewSeq==true){
       if(cntBuy > 0 || cntSell > 0){
@@ -1158,7 +1156,7 @@ void OnTick(){
             {    randomEntrySell(); entrySellPosition();   }
          }
          
-      ////            //////////////////////////////////////////////////////////////////    
+         
       ////  BB ONLY  //////////////////////////////////////////////////////////////////    
          if(InpUseRSI==false && InpUseEMA==false && InpUseADX==false && InpUseBB!=ENUM_OFF){
             //-- Buys
@@ -1169,7 +1167,7 @@ void OnTick(){
             {    randomEntrySell(); entrySellPosition();   }
          }
          
-      ////              ////////////////////////////////////////////////////////////////    
+          
       ////  RSI & EMA  ////////////////////////////////////////////////////////////////  
          if(InpUseRSI==true && InpUseEMA==true && InpUseADX==false && InpUseBB==ENUM_OFF){
             //-- Buys
@@ -1180,7 +1178,7 @@ void OnTick(){
             {    randomEntrySell(); entrySellPosition();   }
          }
          
-      ////              ////////////////////////////////////////////////////////////////  
+       
       ////  RSI & ADX  ////////////////////////////////////////////////////////////////    
          if(InpUseRSI==true && InpUseEMA==false && InpUseADX==true && InpUseBB==ENUM_OFF){
             //-- Buys
@@ -1191,7 +1189,7 @@ void OnTick(){
             {    randomEntrySell(); entrySellPosition();   }
          }
          
-      /////            /////////////////////////////////////////////////////////////////   
+       
       ////  RSI & BB  /////////////////////////////////////////////////////////////////   
          if(InpUseRSI==true && InpUseEMA==false && InpUseADX==false && InpUseBB!=ENUM_OFF){
             //-- Buys
@@ -1202,7 +1200,7 @@ void OnTick(){
             {    randomEntrySell(); entrySellPosition();   }
          }
                                                                                                                                                                                
-      /////              ///////////////////////////////////////////////////////////////                                                                                         
+                                                                                               
       ////  EMA & ADX  ////////////////////////////////////////////////////////////////
          if(InpUseRSI==false && InpUseEMA==true && InpUseADX==true && InpUseBB==ENUM_OFF){
             //-- Buys
@@ -1213,7 +1211,7 @@ void OnTick(){
             {    randomEntrySell(); entrySellPosition();   }
          }
          
-      ////             /////////////////////////////////////////////////////////////////   
+        
       ////  EMA & BB  /////////////////////////////////////////////////////////////////  
          if(InpUseRSI==false && InpUseEMA==true && InpUseADX==false && InpUseBB!=ENUM_OFF){
             //-- Buys
@@ -1224,7 +1222,7 @@ void OnTick(){
             {    randomEntrySell(); entrySellPosition();    }
          }
                  
-      /////            /////////////////////////////////////////////////////////////////
+      
       ////  ADX & BB  /////////////////////////////////////////////////////////////////   
          if(InpUseRSI==false && InpUseEMA==false && InpUseADX==true && InpUseBB!=ENUM_OFF){
             //-- Buys
@@ -1235,7 +1233,7 @@ void OnTick(){
             {    randomEntrySell(); entrySellPosition();    }
          }
            
-      /////                   //////////////////////////////////////////////////////////   
+         
       ////  RSI & EMA & ADX  //////////////////////////////////////////////////////////  
          if(InpUseRSI==true && InpUseEMA==true && InpUseADX==true && InpUseBB==ENUM_OFF){
             //-- Buys
@@ -1246,7 +1244,7 @@ void OnTick(){
             {    randomEntrySell(); entrySellPosition();    }  
          }
         
-      /////                  ///////////////////////////////////////////////////////////   
+       
       ////  RSI & ADX & BB  ///////////////////////////////////////////////////////////   
          if(InpUseRSI==true && InpUseEMA==false && InpUseADX==true && InpUseBB!=ENUM_OFF){
             //-- Buys
@@ -1257,7 +1255,7 @@ void OnTick(){
             {    randomEntrySell(); entrySellPosition();    }
          }
        
-      /////                  ///////////////////////////////////////////////////////////   
+        
       ////  EMA & ADX & BB  ///////////////////////////////////////////////////////////  
          if(InpUseRSI==false && InpUseEMA==true && InpUseADX==true && InpUseBB!=ENUM_OFF){
             //-- Buys
@@ -1268,7 +1266,7 @@ void OnTick(){
             {    randomEntrySell(); entrySellPosition();    }
          }
         
-      /////                  ///////////////////////////////////////////////////////////  
+      
       ////  RSI & EMA & BB  ///////////////////////////////////////////////////////////   
          if(InpUseRSI==true && InpUseEMA==true && InpUseADX==false && InpUseBB!=ENUM_OFF){
             //-- Buys
@@ -1279,7 +1277,7 @@ void OnTick(){
             {    randomEntrySell(); entrySellPosition();    }
          }
        
-      /////                        /////////////////////////////////////////////////////   
+        
       ////  RSI & EMA & ADX & BB  /////////////////////////////////////////////////////   
          if(InpUseRSI==true && InpUseEMA==true && InpUseADX==true && InpUseBB!=ENUM_OFF){
             //-- Buys
@@ -1957,7 +1955,7 @@ void OnTradeTransaction(const MqlTradeTransaction &trans,const MqlTradeRequest &
    }   
 }
 
-////  RETURN CUSTOMSESSION AS STRING  ////////////////////////////////////////////////////////////////////
+////  RETURN CUSTOMSESSION AS STRING  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 string customSessionString(){
    switch (today.day_of_week) {
       case 1:
